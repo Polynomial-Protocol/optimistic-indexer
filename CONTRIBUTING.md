@@ -9,7 +9,7 @@ There are multiple opportunities to contribute at any level. It doesn't matter i
 This document will help you get started. **Do not let the document intimidate you**.
 It should be considered as a guide to help you navigate the process.
 
-The [Polynomial Discord]([http://discord.gg/polynomial](https://t.co/n5M5VF5rgf)) is available for any concerns you may have that are not covered in this guide.
+The [Polynomial Discord](https://discord.com/invite/polynomial) is available for any concerns you may have that are not covered in this guide.
 
 If you contribute to this project, your contributions will be made to the project under the MIT license.
 
@@ -93,3 +93,4 @@ If a pull request appears to be abandoned or stalled, it is polite to first chec
 _Adapted from the [Foundry contributing guide][foundry-contributing]_.
 
 [foundry-contributing]: https://github.com/foundry-rs/foundry/blob/master/CONTRIBUTING.md
+[mcve]: https://stackoverflow.com/help/mcve
