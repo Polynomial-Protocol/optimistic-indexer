@@ -19,7 +19,8 @@ Optimistic Indexer is a Fast, Low Latency event indexer tailored for EVM-based b
 
 The indexer is non-opinionated, exporting events to a MongoDB NOSQL database. It's designed to be part of a larger service architecture that reads these events to serve to end-users.
 
-<img  width="819" height="500"  alt="Optimistic Indexer"  src="https://github.com/Polynomial-Protocol/optimistic-indexer/assets/19399278/0450b6c5-3491-41b7-b939-e6e126f41607">
+<img  width="819" height="500"  alt="Optimistic Indexer"  src="https://github.com/Polynomial-Protocol/optimistic-indexer/assets/19399278/80206ffd-ab6f-4ba3-bf2a-9177e31739e6">
+
 
 ### 🌟 Features
 
