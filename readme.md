@@ -127,3 +127,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Made with 🔴 by Polynomial Protocol. 
 For any issues or contributions, please refer to our [GitHub repository](https://github.com/Polynomial-Protocol/intergalactic-indexer).
+
+Credits @phoenikx 
