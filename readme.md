@@ -8,7 +8,7 @@
 ![Blockchain](https://img.shields.io/badge/blockchain-EVM--based-green)
 
 **Easy-to-Setup, Low Latency Indexer for L2s**
-<img  width="819"  alt="Optimistic Indexer"  src="https://github.com/Polynomial-Protocol/intergalactic-indexer/assets/19399278/bfc76ecf-8bc8-4c62-b80e-113edd247ca9">
+<img  width="819"  alt="Optimistic Indexer"  src="https://github.com/Polynomial-Protocol/optimistic-indexer/assets/19399278/92a17c02-9957-4d86-8191-6b198926b315">
 
 ## What is Optimistic Indexer?
 
