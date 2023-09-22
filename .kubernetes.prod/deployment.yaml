@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: indexer
+  namespace: polynomial-prod
+  labels:
+    app: indexer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: indexer
+  template:
+    metadata:
+      labels:
+        app: indexer
+    spec:
+      containers:
+        - name: indexer
+          image: ghcr.io/polynomial-protocol/intergalactic_indexer:cf542b
+          resources:
+            requests:
+                memory: "300Mi"
+                cpu: "300m"
+            limits:
+                memory: "600Mi"
+                cpu: "500m"
+          ports:
+            - containerPort: 80
+          env:
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: MONGO_URI
+            - name: APP_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: APP_NAME
+            - name: CONTRACTS_RELATIVE_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: CONTRACTS_RELATIVE_PATH
+            - name: NETWORK
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: NETWORK
+            - name: INDEXES_RELATIVE_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: INDEXES_RELATIVE_PATH
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: DB_NAME
+            - name: ALCHEMY_API_KEY_FOR_INDEXER
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: ALCHEMY_API_KEY_FOR_INDEXER
+            - name: ALCHEMY_API_KEY_FOR_RECONCILIATION
+              valueFrom:
+                secretKeyRef:
+                  name: indexer-env
+                  key: ALCHEMY_API_KEY_FOR_RECONCILIATION
+
+      imagePullSecrets:
+        - name: ghcr-secret

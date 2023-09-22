@@ -1,0 +1,9 @@
+node_modules
+dest
+.env
+.idea
+build
+.env.test
+.kubernetes/secrets/*
+.kubernetes.prod/secrets/*
+**/.DS_Store

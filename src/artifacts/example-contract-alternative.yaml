@@ -1,0 +1,16 @@
+- identifier: AAVE_L2_POOL
+  abi:
+    [
+   "event Supply( address indexed reserve,address user,address indexed onBehalfOf,uint256 amount,uint16 indexed referralCode )"
+    ]
+  startIdx: 109849585
+  address: "0x794a61358D6845594F94dc1DB02A252b5b4814aD"
+  eventsToIndex:
+    - name: Supply
+      arguments:
+        - reserve
+        - user
+        - onBehalfOf
+        - amount
+        - referralCode
+    

@@ -1,0 +1,32 @@
+contracts:
+  - name: unique_identifier_idx
+    unique: true
+    background: false
+    spec:
+      - identifier: 1
+  - name: address_idx
+    unique: false
+    background: false
+    spec:
+      - address: 1
+
+events:
+  - name: name_key_value_idx
+    unique: false
+    background: false
+    spec:
+        - name: 1
+        - args.key: 1
+        - args.value: 1
+  - name: contract_name_idx
+    unique: false
+    background: false
+    spec:
+        - contractAddress: 1
+        - name: 1
+  - name: transaction_hash_log_index_idx
+    unique: true
+    background: false
+    spec:
+        - transactionHash: 1
+        - logIndex: 1
