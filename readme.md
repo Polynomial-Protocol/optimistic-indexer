@@ -1,8 +1,8 @@
 # Optimistic Indexer
 
-![GitHub Stars](https://img.shields.io/github/stars/Polynomial-Protocol/intergalactic-indexer?style=social)
-![GitHub Issues](https://img.shields.io/github/issues/Polynomial-Protocol/intergalactic-indexer)
-![GitHub License](https://img.shields.io/github/license/Polynomial-Protocol/intergalactic-indexer)
+![GitHub Stars](https://img.shields.io/github/stars/Polynomial-Protocol/optimistic-indexer?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/Polynomial-Protocol/optimistic-indexer)
+![GitHub License](https://img.shields.io/github/license/Polynomial-Protocol/optimistic-indexer)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Built With](https://img.shields.io/badge/built%20with-Typescript-blue)
 ![Blockchain](https://img.shields.io/badge/blockchain-EVM--based-green)
@@ -19,8 +19,8 @@ Optimistic Indexer is a Fast, Low Latency event indexer tailored for EVM-based b
 
 The indexer is non-opinionated, exporting events to a MongoDB NOSQL database. It's designed to be part of a larger service architecture that reads these events to serve to end-users.
 
-<img  width="819" height="500"  alt="Optimistic Indexer"  src="https://github.com/Polynomial-Protocol/optimistic-indexer/assets/19399278/80206ffd-ab6f-4ba3-bf2a-9177e31739e6">
 
+<img  height="512"  alt="Optimistic Indexer"  src="https://github.com/Polynomial-Protocol/optimistic-indexer/assets/19399278/67a96159-2947-43d7-b530-b46d90d36ccd">
 
 ### 🌟 Features
 
@@ -33,7 +33,7 @@ The indexer is non-opinionated, exporting events to a MongoDB NOSQL database. It
 ### 🔍 Prerequisites
 Before running the indexer, make sure to install the following:
 
-1. **Node.js**  and npm installed
+1. **Node.js**  and npm installed or use the docker container 
 2. **MongoDB**: Install and run MongoDB 4.2+ or use a hosted MongoDB solution like MongoDB Atlas.
 3. **Kafka (Optional)**: Install and run Kafka or use a hosted solution like Confluent if you wish to push events to a Kafka topic.
 4. **Alchemy API Key**: Create an account on Alchemy to query the blockchain for events. Copy your API keys for both indexer and reconciliation tasks.
