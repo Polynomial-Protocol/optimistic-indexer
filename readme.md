@@ -12,7 +12,7 @@
 
 ## What is Optimistic Indexer?
 
-Optimistic Indexer is a Fast, Low Latency event indexer tailored for EVM-based blockchains. Written in TypeScript, it offers two concurrent modes:
+Optimistic Indexer is a Fast, Low Latency event indexer tailored for EVM-based blockchains. Written in [TypeScript](https://www.typescriptlang.org/), it offers two concurrent modes:
 
 - **Point-to-Point:** Indexes each block as they are added.
 - **Reconciliation:** Catches up on any missed blocks.
